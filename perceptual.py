@@ -1,10 +1,6 @@
-
-# --- Imports --- #
 import torch
 import torch.nn.functional as F
 
-
-# --- Perceptual loss network  --- #
 class LossNetwork(torch.nn.Module):
     def __init__(self, vgg_model):
         super(LossNetwork, self).__init__()
@@ -30,5 +26,4 @@ class LossNetwork(torch.nn.Module):
         for pred_im_feature, gt_feature in zip(pred_im_features, gt_features):
             loss.append(F.mse_loss(pred_im_feature, gt_feature))
 
-        return sum(loss)/len(loss)
-
+        return sum(loss) / len(loss)
