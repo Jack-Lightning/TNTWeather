@@ -45,20 +45,14 @@ prefix: base
 ```
 Along with the above, following packages to be installed:
 ```
-timm
-torch
-torchvision
-opencv-python
-mmcv-full 
-matplotlib
-scikit-image
+timm: 1.0.8
+torch: 2.4.0
+torchvision: 0.19.0
+opencv-python: 4.10.0.84
+mmcv-full: 1.7.2
+matplotlib: 3.9.2
+scikit-image: 0.24.0
 ```  
-
-
-
-
-
-
 
 
 # Original Readme 
